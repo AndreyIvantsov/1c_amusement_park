@@ -36,6 +36,20 @@
     <fillChecking>ShowError</fillChecking>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
+  <dimensions uuid="8a8cfd63-b49c-49bf-8c92-8c7128ddb1fa">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
   <dimensions uuid="5c0b2227-de88-4975-9bbf-92951863c410">
     <name>ВидАттракциона</name>
     <synonym>
