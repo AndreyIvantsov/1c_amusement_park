@@ -11,6 +11,10 @@
     <dataPath xsi:type="form:DataPath">
       <segments>Клиент</segments>
     </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>КлиентПриИзменении</name>
+    </handlers>
     <extendedTooltip>
       <name>КлиентРасширеннаяПодсказка</name>
       <id>3</id>
@@ -46,6 +50,40 @@
     <items xsi:type="form:FormGroup">
       <name>ГруппаЛеваяКолонка</name>
       <id>41</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаПопулярныеПокупки</name>
+        <id>77</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Популярные покупки клиента</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаПопулярныеПокупкиРасширеннаяПодсказка</name>
+          <id>78</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <behavior>Auto</behavior>
+          <representation>WeakSeparation</representation>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <showTitle>true</showTitle>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
       <items xsi:type="form:Table">
         <name>ПозицииПродажи</name>
         <id>4</id>
@@ -233,9 +271,89 @@
         <autoCommandBar>
           <name>ПозицииПродажиКоманднаяПанель</name>
           <id>5</id>
+          <items xsi:type="form:Button">
+            <name>ПозицииПродажиПодбор</name>
+            <id>72</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ПозицииПродажиПодборРасширеннаяПодсказка</name>
+              <id>73</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Command.Подбор</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <check>true</check>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>ПозицииПродажиИзменитьФорму</name>
+            <id>81</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ПозицииПродажиИзменитьФормуРасширеннаяПодсказка</name>
+              <id>82</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.StandardCommand.CustomizeForm</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>ПозицииПродажиСправка</name>
+            <id>79</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ПозицииПродажиСправкаРасширеннаяПодсказка</name>
+              <id>80</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.StandardCommand.Help</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
           <horizontalAlign>Left</horizontalAlign>
           <autoFill>true</autoFill>
         </autoCommandBar>
+        <handlers>
+          <event>DragCheck</event>
+          <name>ПозицииПродажиПроверкаПеретаскивания</name>
+        </handlers>
         <handlers>
           <event>Drag</event>
           <name>ПозицииПродажиПеретаскивание</name>
@@ -352,6 +470,49 @@
         <fileDragMode>AsFileRef</fileDragMode>
         <rowFilter xsi:type="core:UndefinedValue"/>
       </items>
+      <items xsi:type="form:Decoration">
+        <name>ДекорацияБаллыКлиента</name>
+        <id>74</id>
+        <title>
+          <key>ru</key>
+          <value> Баллы клиента</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ДекорацияБаллыКлиентаРасширеннаяПодсказка</name>
+          <id>76</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ДекорацияБаллыКлиентаКонтекстноеМеню</name>
+          <id>75</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <height>2</height>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>true</horizontalStretch>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <handlers>
+            <event>URLProcessing</event>
+            <name>ДекорацияБаллыКлиентаОбработкаНавигационнойСсылки</name>
+          </handlers>
+          <horizontalAlign>Left</horizontalAlign>
+          <verticalAlign>Center</verticalAlign>
+          <backColor xsi:type="core:ColorRef">
+            <color>Style.ToolTipBackColor</color>
+          </backColor>
+        </extInfo>
+      </items>
       <items xsi:type="form:FormGroup">
         <name>ГруппаБаллыСумма</name>
         <id>29</id>
@@ -379,6 +540,7 @@
           <defaultButton>true</defaultButton>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
+          <groupHorizontalAlign>Left</groupHorizontalAlign>
           <placementArea>UserCmds</placementArea>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
@@ -891,12 +1053,17 @@
       <currentRowUse>Auto</currentRowUse>
     </extInfo>
   </items>
+  <commandBarLocation>None</commandBarLocation>
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
@@ -1147,6 +1314,75 @@
       </parameters>
     </extInfo>
   </attributes>
+  <attributes>
+    <name>ДинамическиеЭлементы</name>
+    <title>
+      <key>ru</key>
+      <value>Динамические элементы</value>
+    </title>
+    <id>13</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <columns>
+      <name>ИмяЭлемента</name>
+      <title>
+        <key>ru</key>
+        <value>Имя элемента</value>
+      </title>
+      <id>14</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Номенклатура</name>
+      <title>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </title>
+      <id>15</id>
+      <valueType>
+        <types>CatalogRef.Номенклатура</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Активность</name>
+      <title>
+        <key>ru</key>
+        <value>Активность</value>
+      </title>
+      <id>17</id>
+      <valueType>
+        <types>Boolean</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
   <formCommands>
     <name>ЗаписатьПроджажу</name>
     <title>
@@ -1160,6 +1396,23 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>ЗаписатьПроджажу</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Подбор</name>
+    <title>
+      <key>ru</key>
+      <value>Подбор</value>
+    </title>
+    <id>2</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Подбор</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>
