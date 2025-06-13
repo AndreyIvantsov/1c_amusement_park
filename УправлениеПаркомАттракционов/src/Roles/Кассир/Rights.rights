@@ -17,12 +17,15 @@
 			<name>MainWindowModeNormal</name>
 			<value>true</value>
 		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЦеныНоменклатуры</name>
 		<right>
-			<name>SaveUserData</name>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>Output</name>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -83,6 +86,58 @@
 	</object>
 	<object>
 		<name>Catalog.Аттракционы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.РабочееМестоКассира</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Номенклатура</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.МаксимальнаяДоляОплатыБаллами</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Клиенты</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
