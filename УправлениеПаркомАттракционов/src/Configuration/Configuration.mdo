@@ -44,7 +44,7 @@
   <roles>Role.Кассир</roles>
   <roles>Role.ОператорАттракционов</roles>
   <roles>Role.ПолныеПрава</roles>
-  <commonModules>CommonModule.НомераТелефоновКлиенСервер</commonModules>
+  <commonModules>CommonModule.НомераТелефоновКлиентСервер</commonModules>
   <constants>Constant.МаксимальнаяДоляОплатыБаллами</constants>
   <catalogs>Catalog.Аттракционы</catalogs>
   <catalogs>Catalog.ВидыАттракционов</catalogs>
