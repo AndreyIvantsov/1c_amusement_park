@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b9e4c0a9-d014-4d34-b8cc-873b8ccda886">
+  <name>Посещения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Посещения</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.РазделПосещения</picture>
+  </picture>
+  <content>Catalog.Аттракционы</content>
+  <content>Document.ПосещениеАттракционов</content>
+  <content>Report.ПопулярныеАттракционы</content>
+  <content>Report.СтатистикаПосещений</content>
+  <content>AccumulationRegister.ПосещенияАттракционов</content>
+  <content>AccumulationRegister.АктивныеПосещения</content>
+  <content>Role.ОператорАттракционов</content>
+</mdclass:Subsystem>
