@@ -177,7 +177,7 @@
             <role>Role.ОператорАттракционов</role>
           </for>
           <for>
-            <role>Role.ПолныеПрава</role>
+            <role>Role.паПолныеПрава</role>
           </for>
         </userVisible>
         <titleLocation>None</titleLocation>
