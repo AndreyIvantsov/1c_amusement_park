@@ -17,4 +17,5 @@
   <content>AccumulationRegister.ПосещенияАттракционов</content>
   <content>AccumulationRegister.АктивныеПосещения</content>
   <content>Role.ОператорАттракционов</content>
+  <content>Report.ДеталиПоПосещению</content>
 </mdclass:Subsystem>
