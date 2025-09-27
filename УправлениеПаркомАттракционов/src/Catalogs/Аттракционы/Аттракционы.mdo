@@ -40,6 +40,7 @@
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.Аттракционы.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Аттракционы.Form.ФормаСписка</defaultListForm>
   <attributes uuid="d6b7bb21-e442-4c66-b0a2-c48c168d1fa4">
     <name>ВидАттракциона</name>
     <synonym>
@@ -56,10 +57,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="15d170cb-4afa-4398-9ac8-ee14d5eb0195">
-    <name>Фото</name>
+    <name>УдалитьФото</name>
     <synonym>
       <key>ru</key>
-      <value>Фото</value>
+      <value>(Не использовать) Фото</value>
     </synonym>
     <type>
       <types>ValueStorage</types>
@@ -70,11 +71,52 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="e98b4823-8328-4916-98cb-94b4bfeb6d5d">
+    <name>Фото</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фото</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.АттракционыПрисоединенныеФайлы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dda44d99-04f6-487b-b12b-ada51c7ad83b">
+    <name>ФотоПеренесено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фото перенесено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="a937634d-2262-409a-8381-ccba60e531e3">
     <name>ФормаЭлемента</name>
     <synonym>
       <key>ru</key>
       <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="110f2e7b-67da-4933-9001-f39626c594a7">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

@@ -1820,6 +1820,7 @@
           <key>ru</key>
           <value>Синхронизировать файлы</value>
         </title>
+        <enabled>false</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>

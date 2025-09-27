@@ -268,6 +268,7 @@
           <autoFill>true</autoFill>
         </autoCommandBar>
         <searchStringAddition>
+          <enabled>false</enabled>
           <name>ДиаграмаГантаТаблицаСтрокаПоиска</name>
           <id>11</id>
           <extendedTooltip>
@@ -291,6 +292,7 @@
           </extInfo>
         </searchStringAddition>
         <viewStatusAddition>
+          <enabled>false</enabled>
           <name>ДиаграмаГантаТаблицаСостояниеПросмотра</name>
           <id>17</id>
           <extendedTooltip>
@@ -315,6 +317,7 @@
           </extInfo>
         </viewStatusAddition>
         <searchControlAddition>
+          <enabled>false</enabled>
           <name>ДиаграмаГантаТаблицаУправлениеПоиском</name>
           <id>14</id>
           <extendedTooltip>

@@ -338,6 +338,9 @@
     <mdObject>InformationRegister.СклоненияПредставленийОбъектов</mdObject>
   </content>
   <content>
+    <mdObject>Catalog.АттракционыПрисоединенныеФайлы</mdObject>
+  </content>
+  <content>
     <mdObject>InformationRegister.ОбновлениеКлючейДоступаТекущиеЗадания</mdObject>
   </content>
   <content>
@@ -485,6 +488,12 @@
     <mdObject>InformationRegister.НастройкиВариантовОтчетов</mdObject>
   </content>
   <content>
+    <mdObject>Catalog.УстановкаЦенНоменклатурыПрисоединенныеФайлы</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.ПродажаБилетаПрисоединенныеФайлы</mdObject>
+  </content>
+  <content>
     <mdObject>InformationRegister.ПараметрыРаботыВерсийРасширений</mdObject>
   </content>
   <content>
@@ -522,6 +531,9 @@
   </content>
   <content>
     <mdObject>Catalog.ГруппыДоступа</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.КлиентыПрисоединенныеФайлы</mdObject>
   </content>
   <content>
     <mdObject>InformationRegister.ОбщиеПоставляемыеМакетыПечати</mdObject>
