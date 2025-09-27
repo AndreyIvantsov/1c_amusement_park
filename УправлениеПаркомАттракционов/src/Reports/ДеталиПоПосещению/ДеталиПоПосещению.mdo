@@ -11,6 +11,11 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ДеталиПоПосещению.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
   <templates uuid="f050da46-00bf-4a23-bc9c-fd495a9f30ab">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>

@@ -275,18 +275,17 @@
     <lineNumberLength>9</lineNumberLength>
   </tabularSections>
   <templates uuid="4dd8dc92-344d-4ff3-a6bc-230ffecc8de4">
-    <name>Билет</name>
+    <name>ПФ_MXL_Билет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Билет</value>
+    </synonym>
   </templates>
-  <commands uuid="33b77bfd-3f5a-440b-9d8b-854d5c1a6f07">
-    <name>Билет</name>
-    <group>FormCommandBarImportant</group>
-    <commandParameterType>
-      <types>DocumentRef.ПродажаБилета</types>
-    </commandParameterType>
-    <parameterUseMode>Multiple</parameterUseMode>
-    <representation>Auto</representation>
-    <picture xsi:type="core:PictureRef">
-      <picture>StdPicture.Print</picture>
-    </picture>
-  </commands>
+  <templates uuid="5844d922-a92f-4fe7-ba85-45709c7f2bca">
+    <name>ПФ_MXL_Реклама</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реклама</value>
+    </synonym>
+  </templates>
 </mdclass:Document>

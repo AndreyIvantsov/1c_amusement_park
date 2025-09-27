@@ -26,4 +26,5 @@
   <content>AccumulationRegister.АктивныеПосещения</content>
   <content>Role.Кассир</content>
   <content>Constant.МаксимальнаяДоляОплатыБаллами</content>
+  <content>CommonCommand.ОтчетыПоПродажам</content>
 </mdclass:Subsystem>
