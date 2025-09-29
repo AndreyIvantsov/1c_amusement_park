@@ -9,6 +9,7 @@
     <value>Владелец дополнительных сведений</value>
   </synonym>
   <type>
+    <types>CatalogRef.Номенклатура</types>
     <types>CatalogRef.ПапкиФайлов</types>
     <types>CatalogRef.ВнешниеПользователи</types>
     <types>CatalogRef.Файлы</types>
